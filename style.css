@@ -46,29 +46,34 @@ body {
     border-bottom: 1px solid #222;
 }
 
+/* -------------------------
+   LOGO AREA
+------------------------- */
+
 .logo-area {
+    height: 115px;
+    width: 100%;
+    padding: 8px;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 115px;
-    padding: 10px;
+
+    overflow: hidden;
     border-right: 1px solid #222;
     background-color: white;
 }
 
 .site-logo {
     display: block;
-    width: 100%;
-    max-width: 200px;
-    height: 110px;
-    object-fit: contain;
-}
 
-.site-logo {
-    display: block;
-    width: 100%;
-    max-width: 190px;
-    height: 100px;
+    /* Prevent logo from escaping the box */
+    max-width: 100%;
+    max-height: 100%;
+
+    width: auto;
+    height: auto;
+
     object-fit: contain;
 }
 
