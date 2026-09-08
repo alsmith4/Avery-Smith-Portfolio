@@ -5,47 +5,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Avery Smith | Marketing Portfolio</title>
+    <title>Avery Smith</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Navigation Bar -->
-    <header>
-        <div id="navigation"></div>
-    </header>
+    <div class="site-wrapper">
 
-    <!-- Main Homepage Content -->
-    <main>
+        <header class="site-header">
 
-        <section class="about-intro">
+            <div class="logo-area">
+                <h1>Avery Smith</h1>
+            </div>
 
-            <h1>Avery Smith</h1>
+            <div class="header-content">
+
+                <div class="header-graphic">
+                    <p>
+                        Marketing • Brand Strategy • Communications
+                    </p>
+                </div>
+
+                <!-- Navigation automatically added by navigation.js -->
+                <div id="navigation"></div>
+
+            </div>
+
+        </header>
+
+
+        <div class="page-layout">
+
+            <!-- LEFT COLUMN -->
+            <aside class="sidebar-navigation">
+
+                <h2>Explore</h2>
+
+                <ul>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+            </aside>
+
+
+            <!-- CENTER COLUMN -->
+            <main class="main-content">
+
+                <div class="hero-image">
+                    Hero Image
+                </div>
+
+                <h1>Welcome</h1>
+
+                <p>
+                    Your main website content goes here. This section can
+                    include your introduction, experience, portfolio work,
+                    photos, projects, and other information.
+                </p>
+
+            </main>
+
+
+            <!-- RIGHT COLUMN -->
+            <aside class="sticky-sidebar">
+
+                <div class="sticky-content">
+
+                    <h2>Quick Links</h2>
+
+                    <p>
+                        Additional information, featured projects,
+                        social media links, or announcements can go here.
+                    </p>
+
+                    <div class="social-links">
+                        <a href="#">LinkedIn</a>
+                    </div>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+
+        <footer class="site-footer">
 
             <p>
-                I'm Avery Smith, and I am a junior at Iowa State University 
-                majoring in Marketing and minoring in Event Management. At 
-                Iowa State, I am the President of AfterDark, a member of the 
-                Hockey Cheerleading Club, and a Communications and Marketing 
-                Intern at the Iowa State University Research Park. I've had 
-                great experiences the past two summers that brought skills 
-                and experience in advertising, sponsorships, research, 
-                proposals, event coordination, email and verbal communication, 
-                social media, analytics, podcasts, and more. As I round out my 
-                internship experiences as an undergraduate student, I am 
-                looking to learn as much as I can about the marketing industry, 
-                especially in brand and product marketing. I'm looking forward 
-                to connecting with companies to find my best fit for Summer 2026.
+                &copy; <span id="year"></span> Avery Smith |
+                <a href="contact.html">Contact</a>
             </p>
 
-        </section>
+        </footer>
 
-    </main>
+    </div>
 
-    <!-- Reusable Navigation -->
+
     <script src="navigation.js"></script>
+
+    <script>
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+    </script>
 
 </body>
 
