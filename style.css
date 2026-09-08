@@ -51,13 +51,24 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 115px;
+    padding: 10px;
     border-right: 1px solid #222;
+    overflow: hidden;
 }
 
-.logo-area h1 {
-    margin: 0;
-    font-size: 2.4rem;
-    font-weight: 500;
+.logo-area a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.site-logo {
+    display: block;
+    width: 100%;
+    max-width: 190px;
+    height: 100px;
+    object-fit: contain;
 }
 
 .header-content {
