@@ -53,14 +53,15 @@ body {
     min-height: 115px;
     padding: 10px;
     border-right: 1px solid #222;
-    overflow: hidden;
+    background-color: white;
 }
 
-.logo-area a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.site-logo {
+    display: block;
     width: 100%;
+    max-width: 200px;
+    height: 110px;
+    object-fit: contain;
 }
 
 .site-logo {
