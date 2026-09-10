@@ -220,6 +220,12 @@ body {
     line-height: 1.6;
 }
 
+.bio {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
 
 /* -------------------------
    RIGHT / STICKY CONTENT
