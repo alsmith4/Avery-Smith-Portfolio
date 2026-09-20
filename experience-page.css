@@ -7,7 +7,7 @@
 .experience-tabs summary a { color: #222; }
 .experience-tabs summary a:hover { color: #7b4054; }
 .experience-tabs details p { margin: 10px 0 0; }
-.experience-subnav { margin: 10px 0 0 15px !important; padding-left: 15px !important; }
+.experience-subnav { margin: 8px 0 0 28px !important; padding-left: 24px !important; }
 .experience-subnav li { margin-bottom: 8px; }
 .experience-subnav a { font-size: .9rem; }
 .experience-detail h1 { margin-bottom: 8px; }
