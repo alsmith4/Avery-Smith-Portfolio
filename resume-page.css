@@ -70,15 +70,13 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    gap: 5px;
+    gap: 12px;
     flex-wrap: nowrap;
     min-width: 0;
-    white-space: nowrap;
 }
 
 .entry-role {
     min-width: 0;
-    white-space: nowrap;
 }
 
 .entry-date {
@@ -88,11 +86,9 @@
     font-weight: 700;
 }
 
-/* Keep the long titles and dates on one line while preserving subheader emphasis. */
-.compact-entry-title {
-    font-size: 0.68rem;
-    line-height: 1.25;
-    letter-spacing: -0.02em;
+.entry-details {
+    margin-top: 0 !important;
+    line-height: 1.35 !important;
 }
 
 .resume-entry ul {
@@ -115,14 +111,5 @@
     .role-title {
         display: flex;
         flex-wrap: nowrap;
-    }
-
-    .compact-entry-title {
-        font-size: 0.58rem;
-        letter-spacing: -0.03em;
-    }
-
-    .entry-date {
-        margin-left: auto;
     }
 }
