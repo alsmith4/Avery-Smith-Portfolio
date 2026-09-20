@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.head.appendChild(quickLinksStyles);
     }
 
-    // Add the same contact information and resume link to the right-hand section on every page.
+    // Add the same contact information and inquiry form to the right-hand section on every page.
     const quickLinks = document.querySelector(".sticky-content");
 
     if (quickLinks) {
@@ -63,6 +63,21 @@ document.addEventListener("DOMContentLoaded", function () {
                        target="_blank"
                        rel="noopener noreferrer">
                         View Resume
+                    </a>
+                </div>
+
+                <div class="quick-inquiry">
+                    <h3>Submit an Inquiry</h3>
+                    <iframe
+                        src="https://forms.gle/Phfk8oYFAigWVrVd6"
+                        title="Submit an inquiry"
+                        loading="lazy">
+                    </iframe>
+                    <a class="inquiry-fallback"
+                       href="https://forms.gle/Phfk8oYFAigWVrVd6"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Open the inquiry form
                     </a>
                 </div>
             </div>
