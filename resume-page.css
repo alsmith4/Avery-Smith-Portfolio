@@ -88,10 +88,11 @@
     font-weight: 700;
 }
 
-/* The three longest experience headings stay on one line, including dates. */
+/* Keep the long titles and dates on one line while preserving subheader emphasis. */
 .compact-entry-title {
-    font-size: clamp(0.36rem, 0.72vw, 0.68rem);
-    letter-spacing: -0.035em;
+    font-size: 0.68rem;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
 }
 
 .resume-entry ul {
@@ -117,8 +118,8 @@
     }
 
     .compact-entry-title {
-        font-size: 0.36rem;
-        letter-spacing: -0.04em;
+        font-size: 0.58rem;
+        letter-spacing: -0.03em;
     }
 
     .entry-date {
