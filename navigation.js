@@ -34,7 +34,11 @@ document.addEventListener("DOMContentLoaded", function () {
         document.head.appendChild(quickLinksStyles);
     }
 
-    // Restore the original right-hand contact panel.
+    // Keep the left Explore panel limited to its four main links.
+    document.querySelectorAll(".sidebar-navigation .experience-subnav").forEach(function (submenu) {
+        submenu.remove();
+    });
+
     const quickLinks = document.querySelector(".sticky-content");
 
     if (quickLinks) {
