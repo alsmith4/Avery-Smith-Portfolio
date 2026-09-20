@@ -1,0 +1,57 @@
+/* -------------------------
+   CONTACT PAGE
+------------------------- */
+
+.contact-content {
+    padding-top: 55px;
+}
+
+.contact-intro {
+    font-size: 1.1rem;
+    margin: 0 0 40px;
+}
+
+.contact-details {
+    display: grid;
+    gap: 28px;
+}
+
+.contact-item h2 {
+    margin: 0 0 8px;
+    font-size: 1.05rem;
+}
+
+.contact-item a {
+    color: #222;
+    line-height: 1.5;
+}
+
+.contact-item a:hover {
+    color: #7b4054;
+}
+
+.linkedin-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.linkedin-icon {
+    width: 32px;
+    height: 32px;
+    padding: 5px;
+    fill: white;
+    background-color: #0a66c2;
+    border-radius: 4px;
+}
+
+.linkedin-link:hover .linkedin-icon {
+    background-color: #004182;
+}
+
+@media (max-width: 900px) {
+    .contact-content {
+        padding-top: 35px;
+    }
+}
