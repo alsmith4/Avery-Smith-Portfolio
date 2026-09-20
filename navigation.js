@@ -26,7 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
         navContainer.innerHTML = navigation;
     }
 
-    // Load the shared Quick Links styles on every page that uses this script.
     if (!document.querySelector('link[href="quick-links.css"]')) {
         const quickLinksStyles = document.createElement("link");
         quickLinksStyles.rel = "stylesheet";
@@ -58,11 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 <div class="quick-contact-item">
                     <h3>LinkedIn</h3>
-                    <a class="quick-linkedin-link"
-                       href="https://www.linkedin.com/in/asmith348/"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       aria-label="Visit Avery Smith's LinkedIn profile">
+                    <a class="quick-linkedin-link" href="https://www.linkedin.com/in/asmith348/" target="_blank" rel="noopener noreferrer" aria-label="Visit Avery Smith's LinkedIn profile">
                         <svg class="quick-linkedin-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
                             <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.32 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM3.54 20.45H7.1V9H3.54v11.45Z"/>
                         </svg>
@@ -71,52 +66,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 <div class="quick-contact-item">
                     <h3>Resume</h3>
-                    <a href="https://docs.google.com/document/d/1aXJpiSVYlde3n-w6Yc-jALl2ahOkCf90/edit?usp=sharing&ouid=114435233403530022066&rtpof=true&sd=true"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        View Resume
-                    </a>
+                    <a href="https://docs.google.com/document/d/1aXJpiSVYlde3n-w6Yc-jALl2ahOkCf90/edit?usp=sharing&ouid=114435233403530022066&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">View Resume</a>
                 </div>
 
                 <div class="quick-inquiry">
                     <h3>Submit an Inquiry</h3>
-                    <a class="inquiry-link"
-                       href="https://forms.gle/Phfk8oYFAigWVrVd6"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        Complete the inquiry form
-                    </a>
+                    <a class="inquiry-link" href="https://forms.gle/Phfk8oYFAigWVrVd6" target="_blank" rel="noopener noreferrer">Complete the inquiry form</a>
                 </div>
             </div>
         `;
     }
 
-    // Automatically highlight the current page.
     let currentPage = window.location.pathname.split("/").pop();
+    if (currentPage === "") currentPage = "index.html";
 
-    if (currentPage === "") {
-        currentPage = "index.html";
-    }
-
-    const links = document.querySelectorAll(".top-navigation a");
-
-    links.forEach(function (link) {
-        const linkPage = link.getAttribute("href");
-
-        if (linkPage === currentPage) {
+    document.querySelectorAll(".top-navigation a").forEach(function (link) {
+        if (link.getAttribute("href") === currentPage) {
             link.classList.add("active");
         }
     });
 
-    // Keep Experience highlighted on its detail pages.
     const experienceTopLink = document.querySelector(".has-dropdown > a");
-    const experienceDetailPages = [
-        "experience.html",
-        "cambridge.html",
-        "ethos.html",
-        "research-park.html",
-        "afterdark.html"
-    ];
+    const experienceDetailPages = ["experience.html", "cambridge.html", "ethos.html", "research-park.html", "afterdark.html"];
 
     if (experienceTopLink && experienceDetailPages.includes(currentPage)) {
         experienceTopLink.classList.add("active");
