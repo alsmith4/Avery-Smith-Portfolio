@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.head.appendChild(quickLinksStyles);
     }
 
-    // Add the same contact information and inquiry form to the right-hand section on every page.
+    // Add the same contact information and inquiry link to the right-hand section on every page.
     const quickLinks = document.querySelector(".sticky-content");
 
     if (quickLinks) {
@@ -68,16 +68,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 <div class="quick-inquiry">
                     <h3>Submit an Inquiry</h3>
-                    <iframe
-                        src="https://forms.gle/Phfk8oYFAigWVrVd6"
-                        title="Submit an inquiry"
-                        loading="lazy">
-                    </iframe>
-                    <a class="inquiry-fallback"
+                    <a class="inquiry-link"
                        href="https://forms.gle/Phfk8oYFAigWVrVd6"
                        target="_blank"
                        rel="noopener noreferrer">
-                        Open the inquiry form
+                        Complete the inquiry form
                     </a>
                 </div>
             </div>
