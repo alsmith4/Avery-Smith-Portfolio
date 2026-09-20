@@ -70,14 +70,26 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    gap: 12px;
-    flex-wrap: wrap;
+    gap: 8px;
+    flex-wrap: nowrap;
+    min-width: 0;
+}
+
+.entry-role {
+    min-width: 0;
+    white-space: nowrap;
 }
 
 .entry-date {
+    flex: 0 0 auto;
     margin-left: auto;
     white-space: nowrap;
     font-weight: 700;
+}
+
+.compact-entry-title {
+    font-size: clamp(0.56rem, 1.12vw, 0.86rem);
+    letter-spacing: -0.02em;
 }
 
 .resume-entry ul {
@@ -98,12 +110,15 @@
 
     .entry-title,
     .role-title {
-        display: block;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .compact-entry-title {
+        font-size: 0.48rem;
     }
 
     .entry-date {
-        display: block;
-        margin-left: 0;
-        margin-top: 2px;
+        margin-left: auto;
     }
 }
