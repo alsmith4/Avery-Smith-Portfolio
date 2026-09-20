@@ -31,19 +31,20 @@
 }
 
 .linkedin-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
+    display: inline-block;
+    line-height: 0;
     text-decoration: none;
 }
 
 .linkedin-icon {
-    width: 32px;
-    height: 32px;
-    padding: 5px;
+    display: block;
+    width: 22px;
+    height: 22px;
+    padding: 3px;
     fill: white;
     background-color: #0a66c2;
-    border-radius: 4px;
+    border-radius: 3px;
+    transition: background-color 0.2s ease;
 }
 
 .linkedin-link:hover .linkedin-icon {
