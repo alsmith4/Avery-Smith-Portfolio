@@ -225,6 +225,26 @@ body {
     text-decoration: underline;
 }
 
+.experience-nav-item {
+    margin-bottom: 0;
+}
+
+.experience-subnav {
+    margin: 8px 0 0 18px;
+    padding-left: 18px;
+    list-style: none;
+}
+
+.experience-subnav li {
+    margin: 0 0 8px;
+}
+
+.experience-subnav a {
+    display: block;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
 
 /* -------------------------
    MAIN CONTENT
