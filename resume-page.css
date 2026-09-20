@@ -1,0 +1,109 @@
+/* Resume-only styling. This file is loaded only by resume.html. */
+
+.resume-page {
+    min-width: 0;
+    overflow: hidden;
+}
+
+.resume-document {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow-wrap: anywhere;
+    word-break: normal;
+}
+
+.resume-header {
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.resume-header h1 {
+    margin: 0 0 8px;
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+.resume-contact {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.resume-contact a {
+    color: #222;
+}
+
+.resume-section {
+    margin-top: 25px;
+}
+
+.resume-section h2 {
+    margin: 0 0 12px;
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+    letter-spacing: 0.03em;
+}
+
+.resume-section p {
+    margin: 3px 0;
+    line-height: 1.45;
+    overflow-wrap: anywhere;
+}
+
+.resume-entry {
+    min-width: 0;
+    margin-bottom: 18px;
+}
+
+.entry-title,
+.organization-title,
+.role-title {
+    font-weight: 700;
+}
+
+.entry-title,
+.role-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.entry-date {
+    margin-left: auto;
+    white-space: nowrap;
+    font-weight: 700;
+}
+
+.resume-entry ul {
+    margin: 5px 0 0;
+    padding-left: 22px;
+}
+
+.resume-entry li {
+    margin-bottom: 5px;
+    line-height: 1.45;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+    .resume-header {
+        text-align: left;
+    }
+
+    .entry-title,
+    .role-title {
+        display: block;
+    }
+
+    .entry-date {
+        display: block;
+        margin-left: 0;
+        margin-top: 2px;
+    }
+}
