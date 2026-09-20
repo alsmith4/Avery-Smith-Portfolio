@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience | Avery Smith</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="experience-page.css">
+</head>
+<body>
+<div class="site-wrapper">
+<header class="site-header">
+    <div class="logo-area"><img src="avery-smith-logo.png" alt="Avery Smith Logo" class="site-logo"></div>
+    <div class="header-content"><div class="header-graphic"><p>Marketing • Brand Strategy • Communications</p></div><div id="navigation"></div></div>
+</header>
+<div class="page-layout">
+    <aside class="sidebar-navigation">
+        <h2>Explore</h2>
+        <ul>
+            <li><a href="about.html">About Me</a></li>
+            <li class="experience-nav-item"><a href="experience.html">Experience</a>
+                <ul class="experience-subnav">
+                    <li><a href="cambridge.html">Cambridge Investment Research, Inc.</a></li>
+                    <li><a href="ethos.html">ETHOS Event Collective</a></li>
+                    <li><a href="research-park.html">ISU Research Park</a></li>
+                    <li><a href="afterdark.html">ISU AfterDark</a></li>
+                </ul>
+            </li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </aside>
+    <main class="main-content experience-content">
+        <h1>Experience</h1>
+        <p class="experience-intro">Select an experience below to learn more about my role, projects, and contributions.</p>
+        <div class="experience-tabs">
+            <details open><summary><a href="cambridge.html">Cambridge Investment Research, Inc.</a></summary><p>Advertising and Media Relations Intern</p></details>
+            <details><summary><a href="ethos.html">ETHOS Event Collective</a></summary><p>Experience and Design Intern</p></details>
+            <details><summary><a href="research-park.html">ISU Research Park</a></summary><p>Communications and Marketing Intern</p></details>
+            <details><summary><a href="afterdark.html">ISU AfterDark</a></summary><p>President and Vice President</p></details>
+        </div>
+    </main>
+    <aside class="sticky-sidebar"><div class="sticky-content"></div></aside>
+</div>
+<footer class="site-footer"><p>&copy; <span id="year"></span> Avery Smith | <a href="contact.html">Contact</a></p></footer>
+</div>
+<script src="navigation.js"></script><script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

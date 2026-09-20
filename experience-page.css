@@ -1,0 +1,19 @@
+/* Experience page and detail-page styling. */
+.experience-content { min-width: 0; }
+.experience-intro { margin-bottom: 25px; }
+.experience-tabs { display: grid; gap: 14px; }
+.experience-tabs details { border-bottom: 1px solid #222; padding-bottom: 12px; }
+.experience-tabs summary { cursor: pointer; font-weight: 700; font-size: 1.15rem; }
+.experience-tabs summary a { color: #222; }
+.experience-tabs summary a:hover { color: #7b4054; }
+.experience-tabs details p { margin: 10px 0 0; }
+.experience-subnav { margin: 10px 0 0 15px !important; padding-left: 15px !important; }
+.experience-subnav li { margin-bottom: 8px; }
+.experience-subnav a { font-size: .9rem; }
+.experience-detail h1 { margin-bottom: 8px; }
+.experience-detail h2 { margin: 26px 0 10px; font-size: 1.1rem; text-decoration: underline; }
+.experience-detail h3 { margin: 0 0 14px; font-size: .95rem; font-weight: 700; }
+.experience-detail p { line-height: 1.6; }
+.experience-detail ul { padding-left: 22px; }
+.experience-detail li { margin-bottom: 10px; line-height: 1.5; }
+@media (max-width: 600px) { .experience-tabs summary { font-size: 1rem; } }
