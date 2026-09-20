@@ -4,6 +4,8 @@
 
 .contact-content {
     padding-top: 55px;
+    min-width: 0;
+    overflow: hidden;
 }
 
 .contact-intro {
@@ -51,8 +53,33 @@
     background-color: #004182;
 }
 
+.contact-form-section {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 40px;
+    min-width: 0;
+}
+
+.contact-form-section h2 {
+    margin: 0 0 18px;
+}
+
+.contact-form-section iframe {
+    display: block;
+    width: 100%;
+    max-width: 640px;
+    height: 1124px;
+    border: 0;
+}
+
 @media (max-width: 900px) {
     .contact-content {
         padding-top: 35px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-form-section iframe {
+        height: 1124px;
     }
 }
