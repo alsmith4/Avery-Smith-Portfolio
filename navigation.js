@@ -5,7 +5,15 @@ document.addEventListener("DOMContentLoaded", function () {
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Me</a></li>
-                <li><a href="experience.html">Experience</a></li>
+                <li class="top-navigation-dropdown">
+                    <a href="experience.html" aria-haspopup="true" aria-expanded="false">Experience</a>
+                    <ul class="top-navigation-submenu">
+                        <li><a href="cambridge.html">Cambridge Investment Research, Inc.</a></li>
+                        <li><a href="ethos.html">ETHOS Event Collective</a></li>
+                        <li><a href="research-park.html">ISU Research Park</a></li>
+                        <li><a href="afterdark.html">ISU AfterDark</a></li>
+                    </ul>
+                </li>
                 <li><a href="resume.html">Resume</a></li>
                 <li><a href="contact.html">Contact Me</a></li>
             </ul>
@@ -97,4 +105,10 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+    const experienceLink = document.querySelector(".top-navigation-dropdown > a");
+    const experiencePages = ["experience.html", "cambridge.html", "ethos.html", "research-park.html", "afterdark.html"];
+
+    if (experienceLink && experiencePages.includes(currentPage)) {
+        experienceLink.classList.add("active");
+    }
 });
