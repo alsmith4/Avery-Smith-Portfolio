@@ -5,7 +5,15 @@ document.addEventListener("DOMContentLoaded", function () {
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Me</a></li>
-                <li><a href="experience.html">Experience</a></li>
+                <li class="has-dropdown">
+                    <a href="experience.html">Experience</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="cambridge.html">Cambridge Investment Research, Inc.</a></li>
+                        <li><a href="ethos.html">ETHOS Event Collective</a></li>
+                        <li><a href="research-park.html">ISU Research Park</a></li>
+                        <li><a href="afterdark.html">ISU AfterDark</a></li>
+                    </ul>
+                </li>
                 <li><a href="resume.html">Resume</a></li>
                 <li><a href="contact.html">Contact Me</a></li>
             </ul>
@@ -26,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.head.appendChild(quickLinksStyles);
     }
 
-    // Add the same contact information and resume link to the right-hand section on every page.
+    // Add the same contact information and inquiry link to the right-hand section on every page.
     const quickLinks = document.querySelector(".sticky-content");
 
     if (quickLinks) {
@@ -96,5 +104,13 @@ document.addEventListener("DOMContentLoaded", function () {
             link.classList.add("active");
         }
     });
+
+    // Highlight "Experience" when on any of its detail pages too.
+    const experienceTopLink = document.querySelector(".has-dropdown > a");
+    const experienceDetailPages = ["experience.html", "cambridge.html", "ethos.html", "research-park.html", "afterdark.html"];
+
+    if (experienceTopLink && experienceDetailPages.includes(currentPage)) {
+        experienceTopLink.classList.add("active");
+    }
 
 });
