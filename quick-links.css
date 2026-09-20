@@ -1,0 +1,44 @@
+/* -------------------------
+   SHARED QUICK LINKS
+------------------------- */
+
+.quick-contact-details {
+    display: grid;
+    gap: 18px;
+}
+
+.quick-contact-item h3 {
+    margin: 0 0 5px;
+    font-size: 0.95rem;
+}
+
+.quick-contact-item a {
+    color: #222;
+    line-height: 1.4;
+}
+
+.quick-contact-item a:hover {
+    color: #7b4054;
+}
+
+.quick-linkedin-link {
+    display: inline-block;
+    line-height: 0;
+    text-decoration: none;
+}
+
+.quick-linkedin-icon {
+    display: block;
+    width: 22px;
+    height: 22px;
+    padding: 3px;
+    fill: white;
+    background-color: #0a66c2;
+    border-radius: 3px;
+    transition: background-color 0.2s ease;
+}
+
+.quick-linkedin-link:hover .quick-linkedin-icon {
+    background-color: #004182;
+}
+
