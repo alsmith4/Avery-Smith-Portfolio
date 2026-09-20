@@ -70,9 +70,10 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    gap: 8px;
+    gap: 5px;
     flex-wrap: nowrap;
     min-width: 0;
+    white-space: nowrap;
 }
 
 .entry-role {
@@ -87,9 +88,10 @@
     font-weight: 700;
 }
 
+/* The three longest experience headings stay on one line, including dates. */
 .compact-entry-title {
-    font-size: clamp(0.56rem, 1.12vw, 0.86rem);
-    letter-spacing: -0.02em;
+    font-size: clamp(0.36rem, 0.72vw, 0.68rem);
+    letter-spacing: -0.035em;
 }
 
 .resume-entry ul {
@@ -115,7 +117,8 @@
     }
 
     .compact-entry-title {
-        font-size: 0.48rem;
+        font-size: 0.36rem;
+        letter-spacing: -0.04em;
     }
 
     .entry-date {
