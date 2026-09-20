@@ -7,17 +7,21 @@
     gap: 18px;
 }
 
-.quick-contact-item h3 {
+.quick-contact-item h3,
+.quick-inquiry h3 {
     margin: 0 0 5px;
     font-size: 0.95rem;
+    font-weight: bold;
 }
 
-.quick-contact-item a {
+.quick-contact-item a,
+.quick-inquiry a {
     color: #222;
     line-height: 1.4;
 }
 
-.quick-contact-item a:hover {
+.quick-contact-item a:hover,
+.quick-inquiry a:hover {
     color: #7b4054;
 }
 
@@ -41,4 +45,3 @@
 .quick-linkedin-link:hover .quick-linkedin-icon {
     background-color: #004182;
 }
-
